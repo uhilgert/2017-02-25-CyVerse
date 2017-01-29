@@ -3,16 +3,16 @@ layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
 carpentry: "SWC"    # what kind of Carpentry (must be either "dc" or "swc")
 venue: "University of Arizona"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "Instructional Learning Center (ILC), 1503 E. University Blvd, Tucson, AZ 85721"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+address: "Integrated Learning Center (ILC); 1503 E. University Blvd., Tucson, AZ 85721"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
+latlng: "32.234101,-110.9506404"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
 humandate: "Feb 25-26, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
 humantime: "8:30 AM - 5:00 PM"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2017-02-25      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2017-02-26E        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["tbd"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Uwe Hilgert"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+helper: ["tbd"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: ["hilgert@email.arizona.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 etherpad:             # optional: URL for the workshop Etherpad if there is one
 eventbrite: 31582745843 # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -118,7 +118,7 @@ and the administrator will contact you if we need any extra information.</h4>
 -->
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
+  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
   on. They should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
   Software Carpentry's
@@ -195,10 +195,10 @@ and the administrator will contact you if we need any extra information.</h4>
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell and GitHub</td> </tr>
       <tr> <td>10:30</td> <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
+      <tr> <td>13:00</td>  <td>Scientific Analyses with Python and GitHub, I</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -206,10 +206,10 @@ and the administrator will contact you if we need any extra information.</h4>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
+      <tr> <td>09:00</td>  <td>Scientific Analyses with Python and GitHub, II</td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
+      <tr> <td>13:00</td>  <td>Managing data</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -263,12 +263,15 @@ and the administrator will contact you if we need any extra information.</h4>
   <div class="col-md-6">
     <h3 id="syllabus-shell">The Unix Shell</h3>
     <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
+      <li>Shell: Files and directories - in and underneath the GUI</li>
+      <li>Shell: History and tab completion</li>
+      <li>Git: Accessing and pulling files from a repository</li>
+      <li>Shell: Pipes and redirection</li>
+      <li>Git: Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
+      <li>Git: Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
+      <li>Shell: Looping over files</li>
+      <li>Shell: Creating and running shell scripts</li>
+      <li>Shell: Finding things</li>
       <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
     </ul>
   </div>
@@ -328,7 +331,7 @@ and the administrator will contact you if we need any extra information.</h4>
       <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
     </ul>
   </div>
-  <div class="col-md-6">
+<!--<div class="col-md-6">
     <h3 id="syllabus-sql">Managing Data with SQL</h3>
     <ul>
       <li>Reading and sorting data</li>
@@ -342,9 +345,48 @@ and the administrator will contact you if we need any extra information.</h4>
       <li><a href="{{site.swc_pages}}/sql-novice-survey/reference/">Reference...</a></li>
     </ul>
   </div>
+-->
 </div>
 
 <hr/>
+
+<h2 id="Resources">Resources</h2>
+<div class="row">
+  <div class="col-md-6">
+    <h3 id="referenc-shell">Unix Shell References</h3>
+    <ul>
+      <li><a href="http://explainshell.com/" target="_blank">Explain Shell: Parses shell commands and shows docs about the command.</a></li>
+    </ul>
+  </div>
+  <div class="col-md-6">
+    <h3 id="reference-git">Git References</h3>
+    <ul>
+      <li><a href="https://git-scm.com/book/en/v2/Git-in-Other-Environments-Git-in-Bash" target="_blank"><i>Mac/Linux:</i> Integrating Git into your shell prompt</a></li>
+      <li><a href="https://github.com/magicmonty/bash-git-prompt" target="_blank">An informative and fancy bash prompt for Git users</a></li>
+      <li><a href="https://education.github.com/pack" target="_blank">Unlimited private repositories for free on Github, <i>while you are a student</i></a></li>
+    </ul>
+  </div>
+<!--
+  <div class="col-md-6">
+    <h3 id="reference-r">R References</h3>
+    <ul>
+      <li><a href="http://blog.moertel.com/posts/2006-01-20-wondrous-oddities-rs-function-call-semantics.html" target="_blank">R function call Semantics</a></li>
+      <li><a href="https://www.r-bloggers.com/" target="_blank">R News and Tutorials contributed by (600) R Bloggers</a></li>
+      <li><a href="http://rmarkdown.rstudio.com/" target="_blank">R Markdown Site/Docs</a></li>
+      <li><a href="https://www.tutorialspoint.com/r/r_operators.htm" target="_blank">Tutorial: R Operators</a></li>
+    </ul>
+  </div>
+-->
+  <div class="col-md-6">
+    <h3 id="reference-r">Python References</h3>
+    <ul>
+      <li><a href="" target="_blank">tbd</a></li>
+      <li><a href="" target="_blank">tbd</a></li>
+      <li><a href="" target="_blank">tbd</a></li>
+      <li><a href="" target="_blank">tbd</a></li>
+    </ul>
+  </div>
+</div>
 
 <!--
   SETUP
@@ -668,6 +710,7 @@ and the administrator will contact you if we need any extra information.</h4>
 -->
 </div> <!-- End of 'Python' section. -->
 
+<!--
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
 
@@ -755,7 +798,7 @@ and the administrator will contact you if we need any extra information.</h4>
     <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
     Instructors will provide a workaround for it if needed.</strong></p>
 </div> <!-- End of 'SQLite' section. -->
-
+-->
 <!--
   Uncomment this section if you are using our virtual machine.
 
